@@ -1,2 +1,48 @@
+* {
+  -webkit-box-sizing: border-box; }
+
 body {
-  background: #444; }
+  height: 100%;
+  background: #444;
+  font-family: 'Hepta Slab', serif;
+  padding: 0;
+  color: white; }
+  body#body-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/dist/img/HomeBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+
+.lg-heading {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 18%;
+  margin-bottom: 3vh; }
+
+.sm-heading {
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  padding: 0;
+  margin: 0;
+  color: gold; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+  header .icons a {
+    padding: 0.4rem; }
+    header .icons a:hover {
+      color: darkgray;
+      transition: all 0.8s ease-out; }
+
+main {
+  padding: 3.5rem;
+  height: 100%; }
+  main#home {
+    overflow: hidden; }
