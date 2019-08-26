@@ -1,0 +1,59 @@
+@include mediaXL{
+
+}
+
+@include mediaLg{
+    .menu {
+        width: 40%;
+    }
+}
+@include mediaMd{
+    main{
+    align-items: center;
+    text-align: center;
+    
+    .lg-heading{
+        margin-bottom: 2rem;
+    }
+    }
+    .menu {
+        width: 50%;
+        &-nav {
+            height: 42.5%;
+        }
+        &-contact {
+        }
+    }
+}
+
+@include mediaSm{
+
+    main{
+        align-items: center;
+        text-align: center;
+        .lg-heading{
+            margin-bottom: 2rem;
+            font-size: 9.5vw;
+        }
+        .sm-heading{
+            font-size: 2.5rem;
+        }
+        }
+    .menu {
+        width: 90%;
+
+        &-nav {
+                font-size: 2rem;
+        }
+        &-pic{
+            .my-pic{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        &-contact {
+            font-size: 1rem;
+            padding: 15% 0 0 0;
+        }
+    }
+}
