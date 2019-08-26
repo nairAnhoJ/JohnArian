@@ -1,10 +1,12 @@
+@import "menu";
+
 $color1: #444;
 
 * {
     -webkit-box-sizing: border-box;
 }
 
-@mixin easeout {
+@mixin ease0ut {
     transition: all 0.8s ease-out;
 }
 
@@ -26,19 +28,17 @@ body{
     color: white;
 }
 
-
-
 .lg-heading{
     text-transform: uppercase;
     font-size: 4rem;
+    margin-top: 22vh;
     font-weight: 800;
-    margin-top: 18%;
-    margin-bottom: 3vh;
+    margin-bottom: 10px;
 }
 
 .sm-heading{
     text-transform: capitalize;
-    font-size: 2.8rem;
+    font-size: 3rem;
     padding: 0;
     margin: 0;
     color: gold;
@@ -58,7 +58,7 @@ header{
             padding: 0.4rem;
             &:hover{
                 color: darkgray;
-                @include easeout();
+                @include ease0ut();
             }
         }
     }
@@ -71,3 +71,23 @@ main{
         overflow: hidden;
     }
 }
+
+/* @media(max-width: 700px) {
+    .lg-heading {
+        font-size: 2.5rem;
+    }
+    .sm-heading {
+        font-size: 1.7rem;
+    }
+    main{
+        padding: 1.8rem;
+    }
+    .menu {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        &-nav {
+        font-size: 2rem;
+        }
+    }
+} */
