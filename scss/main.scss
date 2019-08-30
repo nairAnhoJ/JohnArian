@@ -4,6 +4,10 @@
 
 $color1: #444;
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     -webkit-box-sizing: border-box;
 }
@@ -14,7 +18,7 @@ $color1: #444;
 
 @mixin background {
     &#body-img{
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url('/dist/img/HomeBackground.png');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url('/dist/img/HomeBackground.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -24,9 +28,11 @@ $color1: #444;
 body{
     @include background();
     height: 100%;
-    background: $color1;
+    width: 100%;
+    background: #606060;
     font-family: 'Hepta Slab', serif;
     padding: 0;
+    margin: 0;
     color: white;
 }
 
@@ -34,7 +40,7 @@ body{
     text-transform: uppercase;
     font-size: 4rem;
     margin-top: 22vh;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -66,30 +72,292 @@ header{
     }
 }
 
+
+
 main{
-    padding: 3.5rem;
+    padding: 0px;
     height: 100%;
     &#home{
+        padding: 80px;
         overflow: hidden;
+    }
+
+    .cover-pic {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('/dist/img/About-BG.jpg');
+        z-index: 3;
+        height: 82vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 }
 
-/* @media(max-width: 700px) {
-    .lg-heading {
-        font-size: 2.5rem;
+
+#about-me {
+
+    .prof{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        color: gold;
+        margin: 3% 0 0 0;
     }
-    .sm-heading {
-        font-size: 1.7rem;
+
+    hr{
+        margin: 3% auto 10% auto;
     }
-    main{
-        padding: 1.8rem;
-    }
-    .menu {
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        &-nav {
-        font-size: 2rem;
+
+
+    .cont{
+        display: grid;
+        grid-template-areas: 'abt-me mypic pers';
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        text-align: center;
+        padding: 0 2% 15% 2%;
+
+        h2, h3 {
+            font-weight: 400;
+        }
+
+        .ab-me{
+            grid-area: abt-me;
+            text-align: left;
+            background: #585858;
+            padding: 10px;
+            border-bottom: 5px solid gold;
+        }
+        .me{
+            grid-area: mypic;
+            .me-pic{
+                height: 350px;
+                width: 350px;
+                border: 4px solid gold;
+                border-radius: 50%;
+                background: url(/dist/img/me-pic.png);
+                margin: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        .personal{
+            grid-area: pers;
+            text-align: left;
+            background: #585858;
+            padding: 10px;
+            border-bottom: 5px solid gold;
+        }
+
+        .ab-title{
+            font-size: 2rem;
+        }
+
+        .Info{
+            font-size: 2rem;
+        }
+
+        .infoName {
+            font-weight: bold;
         }
     }
-} */
+}
+
+#my-skills{
+
+    list-style: none;
+
+    .skill-pic{
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('/dist/img/Skill-bg.jpg');
+        z-index: 3;
+        height: 82vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .sk{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        color: gold;
+        margin: 3% 0 0 0;
+    }
+
+    .hr1{
+        width: 60%;
+        margin: 3% auto 100px auto;
+    }
+
+    .sk2{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        color: gold;
+        margin: 10% 0 0 0;
+    }
+
+    .skill-cont{
+        text-align: center;
+        width: 65%;
+        margin: auto;
+    }
+
+    .tool-cont{
+        text-align: center;
+        width: 65%;
+        margin: auto auto 50px auto;
+    }
+
+    li {
+        text-align: left;
+        margin: 20px;
+    }
+
+    .bar{
+        background: #353b48;
+        display: block;
+        height: 6px;
+        margin: auto auto 50px auto;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #2187e7b3;
+        
+        span{
+            height: 6px;
+            float: left;
+            background: #2187e7;
+        }
+    }
+
+    .html {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .css {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .sass {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .bootstrap {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .javascript {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .jquery {
+        width: 50%;
+        animation: fifty 2s;
+    }
+    .angular {
+        width: 50%;
+        animation: fifty 2s;
+    }
+    .oop {
+        width: 50%;
+        animation: fifty 2s;
+    }
+    .vb {
+        width: 50%;
+        animation: fifty 2s;
+    }
+    .cpp {
+        width: 25%;
+        animation: fifty 2s;
+    }
+    .vsc {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .win {
+        width: 100%;
+        animation: hundred 2s;
+    }
+    .ms {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .ps {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .prem {
+        width: 75%;
+        animation: svf 2s;
+    }
+    .ae {
+        width: 50%;
+        animation: fifty 2s;
+    }
+    .bracket {
+        width: 75%;
+        animation: svf 2s;
+    }
+    
+    @keyframes hundred {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+    @keyframes svf {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 75%;
+        }
+    }
+
+    @keyframes fifty {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 50%;
+        }
+    }
+
+}
+
+#my-proj{
+
+    .proj-pic{
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('/dist/img/Project-bg.jpg');
+        z-index: 3;
+        height: 82vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .sk{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        color: gold;
+        margin: 3% 0 0 0;
+    }
+
+    .hr1{
+        width: 60%;
+        margin: 3% auto 100px auto;
+    }
+
+}

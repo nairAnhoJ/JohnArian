@@ -9,19 +9,108 @@
 }
 @include mediaMd{
     main{
-    align-items: center;
-    text-align: center;
+        align-items: center;
+        text-align: center;
+
+        &#home{
+            padding: 80px 0 80px 0 !important;
+            overflow: hidden;
+        }
+
+        &#about-me{
+            padding: 0 !important;
+            overflow: hidden;
+
+            .cover-pic{
+                height: 71vh;
+            }
+
+            .prof{
+                margin: 5% 0 0 0;
+            }
+
+            hr{
+               margin: 5% auto 8% auto;
+            }
+
+            .cont{
+                align-items: center;
+                justify-content: center;
+                grid-template-areas: 'mypic' 'abt-me' 'pers';
+                grid-template-columns: 0.9fr;
+                grid-row-gap: 50px;
+                margin: 0 0 10% 0;
     
-    .lg-heading{
-        margin-bottom: 2rem;
-    }
+                .ab-me{
+                    text-align: center;
+                }
+                .me{
+                    .me-pic{
+                        height: 250px;
+                        width: 250px;
+                    }
+                }
+                .personal{
+                    text-align: center;
+                    padding: 10px;
+                }
+    
+                .ab-title{
+                    font-size: 2rem;
+                }
+    
+                .Info{
+                   font-size: 2rem;
+                }
+    
+              .infoName {
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        &#my-skills{
+            .skill-pic{
+                height: 74vh;
+            }
+            .hr1{
+                width: 70%;
+                margin: 3% auto 50px auto;
+            }
+            .tool-cont{
+                width: 70%;
+                margin: auto auto 210px auto;
+            }
+            li{
+                width: 100%;
+                margin: 0;
+            }
+            .hr2{
+                width: 70% !important;
+                margin: 25px auto 50px auto !important;
+            }
+        }
+
+        &#my-proj{
+            .proj-pic{
+                height: 74vh;
+            }
+        }
+
+        .cover-pic{
+            background-size: cover;
+        }
+    
+        .lg-heading{
+            margin-bottom: 2rem;
+        }
+
     }
     .menu {
         width: 50%;
         &-nav {
             height: 42.5%;
-        }
-        &-contact {
         }
     }
 }
@@ -31,14 +120,77 @@
     main{
         align-items: center;
         text-align: center;
-        .lg-heading{
-            margin-bottom: 2rem;
-            font-size: 9.5vw;
+
+        &#home{
+            padding: 80px 0 80px 0 !important;
+            overflow: hidden;
+
         }
-        .sm-heading{
-            font-size: 2.5rem;
+
+        &#about-me{
+        
+            padding: 0 !important;
+            overflow: hidden;
+    
+            .cover-pic{
+                height: 85vh;
+            }
+    
+            .prof{
+                margin: 5% 0 0 0;
+            }
+    
+            hr{
+                margin: 5% auto 8% auto;
+            }
+    
+            .cont{
+                
+                margin: 0 !important;
+
+                .ab-me{
+                    text-align: center;
+                }
+                .me{
+                    .me-pic{
+                        height: 210px;
+                        width: 210px;
+                    }
+                }
+    
+            }
         }
+            .lg-heading{
+                margin-bottom: 1.5rem;
+                font-size: 9.5vw;
+            }
+            .sm-heading{
+                font-size: 2.5rem;
+            }
+
+        &#my-skills{
+            .skill-pic{
+                height: 88vh;
+            }
+            .hr1{
+                width: 70%;
+                margin: 3% auto 50px auto;
+            }
+            .tool-cont{
+                width: 70%;
+                margin: auto auto 50px auto;
+            }
+            li{
+                width: 100%;
+                margin: 0;
+            }
+            .hr2{
+                width: 70% !important;
+                margin: 50px auto 50px auto !important;
+            }
         }
+    }
+
     .menu {
         width: 90%;
 
@@ -54,6 +206,12 @@
         &-contact {
             font-size: 1rem;
             padding: 15% 0 0 0;
+        }
+    }
+
+    &#my-proj{
+        .proj-pic{
+            height: 88vh !important;
         }
     }
 }
