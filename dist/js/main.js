@@ -14,6 +14,8 @@ let showMenu = false;
 
 //Menu Button
 menuBtn.addEventListener('click', toggleMenu);
+menuIcons.addEventListener('click', toggleMenu);
+
 
 function toggleMenu() {
     if(!showMenu) {

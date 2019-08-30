@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Personal Website",
   "main": "index.js",
+  "hompage": "https://jam092196.github.io/PersonalWebsite",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "John Arian Malondras",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }
