@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal Website",
   "main": "index.js",
-  "hompage": "https://jam092196.github.io/personal_website",
+  "hompage": "https://jam092196.github.io/johnarian",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
