@@ -18,7 +18,7 @@ $color1: #444;
 
 @mixin background {
     &#body-img{
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url('/dist/img/HomeBackground.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url('../img/HomeBackground.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -82,8 +82,14 @@ main{
         overflow: hidden;
     }
 
+    
+}
+
+
+#about-me {
+
     .cover-pic {
-        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('/dist/img/About-BG.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url(../img/About-BG.jpg);
         z-index: 3;
         height: 82vh;
         width: 100%;
@@ -93,10 +99,6 @@ main{
         background-position: center;
         background-attachment: fixed;
     }
-}
-
-
-#about-me {
 
     .prof{
         text-align: center;
@@ -137,7 +139,7 @@ main{
                 width: 350px;
                 border: 4px solid gold;
                 border-radius: 50%;
-                background: url(/dist/img/me-pic.png);
+                background: url(../img/me-pic.png);
                 margin: auto;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -170,7 +172,7 @@ main{
     list-style: none;
 
     .skill-pic{
-        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('/dist/img/Skill-bg.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url(../img/Skill-bg.jpg);
         z-index: 3;
         height: 82vh;
         width: 100%;
@@ -337,7 +339,7 @@ main{
 #my-proj{
 
     .proj-pic{
-        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('/dist/img/Project-bg.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url(../img/Project-bg.jpg);
         z-index: 3;
         height: 82vh;
         width: 100%;

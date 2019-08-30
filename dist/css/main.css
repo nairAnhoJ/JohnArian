@@ -44,7 +44,7 @@
     .menu-pic .my-pic {
       width: 200px;
       height: 200px;
-      background: url(/dist/img/me-pic.png);
+      background: url(../img/me-pic.png);
       border-radius: 50%;
       border: solid 3px gold;
       background-position: center;
@@ -214,7 +214,7 @@ body {
   margin: 0;
   color: white; }
   body#body-img {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("/dist/img/HomeBackground.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../img/HomeBackground.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; }
@@ -253,16 +253,17 @@ main {
   main#home {
     padding: 80px;
     overflow: hidden; }
-  main .cover-pic {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/dist/img/About-BG.jpg");
-    z-index: 3;
-    height: 82vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; }
+
+#about-me .cover-pic {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../img/About-BG.jpg);
+  z-index: 3;
+  height: 82vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 #about-me .prof {
   text-align: center;
@@ -296,7 +297,7 @@ main {
       width: 350px;
       border: 4px solid gold;
       border-radius: 50%;
-      background: url(/dist/img/me-pic.png);
+      background: url(../img/me-pic.png);
       margin: auto;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -316,7 +317,7 @@ main {
 #my-skills {
   list-style: none; }
   #my-skills .skill-pic {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/dist/img/Skill-bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../img/Skill-bg.jpg);
     z-index: 3;
     height: 82vh;
     width: 100%;
@@ -435,7 +436,7 @@ main {
     width: 50%; } }
 
 #my-proj .proj-pic {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/dist/img/Project-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../img/Project-bg.jpg);
   z-index: 3;
   height: 82vh;
   width: 100%;
